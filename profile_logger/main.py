@@ -7,7 +7,7 @@ from pathlib import Path
 from datetime import datetime
 
 
-def log_profile(log_folder="profile_logs"):
+def log_profile(log_folder):
     def wrap(func):
         def inner(*args, **kwargs):
             curr_time_hr = datetime.now()
