@@ -1,3 +1,3 @@
 # flake8: noqa
 
-from profile_logger import log_profile
+from profile_logger.main import log_profile
