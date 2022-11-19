@@ -27,8 +27,7 @@ def log_profile(log_folder):
 
             Path(log_folder).mkdir(parents=True, exist_ok=True)
 
-            script_path = func.__globals__['__file__']
-            log_title = f'{script_path}: {func.__name__} at {curr_time_hr}'
+            log_title = f'{func.__name__} at {curr_time_hr}'
             log_heading = f"{'='*10} {log_title} {'='*10}\n\n"
             log_filename = f"log_{str(curr_time_unixs).replace('.', '_')}.txt"
             log_path = os.path.join(log_folder, log_filename)
